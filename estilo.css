@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a fonte padrão para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos da faixa de perfil (profile-banner) */
+.profile-banner {
+    background-color: #ffd1dc; /* Cor de fundo rosa suave */
+    padding: 20px; /* Espaçamento interno para tornar a faixa mais alta */
+    display: flex; /* Exibe conteúdo horizontalmente com flexbox */
+    justify-content: flex-start; /* Alinha conteúdo à esquerda */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+}
+
+/* Container para organizar foto e informações lado a lado */
+.profile-content {
+    display: flex; /* Alinha foto e informações lado a lado */
+    gap: 20px; /* Espaçamento entre foto e informações */
+}
+
+/* Estilos da foto de perfil */
+.profile-photo img {
+    width: 205px; /* Define a largura da imagem */
+    height: 205px; /* Define a altura da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+}
+
+/* Estilo para o nome do perfil */
+.profile-info h2 {
+    color: #000000; /* Cor preta para o nome */
+    font-size: 35px; /* Tamanho grande para destacar o nome */
+    margin-top: 50px; /* Margem superior para posicionar o nome */
+    margin-bottom: 20px; /* Espaçamento abaixo do nome */
+}
+
+/* Estilos das informações de contato */
+.contact-info {
+    display: flex; /* Alinha informações de contato horizontalmente */
+    justify-content: flex-start; /* Alinha à esquerda */
+    gap: 20px; /* Espaço entre itens de contato */
+}
+
+.contact-info p {
+    color: #555; /* Cor cinza suave para o texto */
+    font-size: 18px; /* Tamanho da fonte de contato */
+}
+
+/* Estilo dos links de contato */
+.contact-info a {
+    color: #ff69b4; /* Cor rosa para links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Cor rosa para a idade */
+.contact-info .age {
+    color: #ff69b4;
+}
+
+/* Estilos para a seção "Sobre Mim" */
+.sobre-mim {
+    background-color: #fff; /* Fundo branco */
+    padding: 25px; /* Espaçamento interno */
+    margin: -25px auto 25px auto; /* Margem superior negativa para sobrepor a faixa rosa */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 10px 20px rgba(161, 111, 111, 0.1); /* Sombra leve para profundidade */
+    max-width: 70%; /* Limita a largura máxima */
+}
+
+/* Título da seção "Sobre Mim" */
+.sobre-mim h2 {
+    color: #ff69b4; /* Cor rosa para o título */
+    font-size: 28px; /* Tamanho maior para destaque */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-weight: bold; /* Deixa o título mais forte */
+}
+
+/* Estilo para os parágrafos de "Sobre Mim" */
+.sobre-mim p {
+    color: #000000; /* Cor preta para o texto */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+/* Container para título e ícones sociais em "Sobre Mim" */
+.sobre-mim-header {
+    display: flex; /* Alinha horizontalmente título e ícones */
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 10px; /* Espaçamento entre título e ícones */
+}
+
+/* Remove margem do título "Sobre Mim" */
+.sobre-mim h2 {
+    margin: 0;
+}
+
+/* Container para os links sociais */
+.social-links {
+    display: flex; /* Alinha ícones horizontalmente */
+    gap: 10px; /* Espaço entre os ícones */
+}
+
+/* Estilo para os ícones sociais */
+.social-links a img {
+    width: 24px; /* Define o tamanho dos ícones */
+    height: 24px;
+    filter: grayscale(100%); /* Ícones em preto e branco inicialmente */
+    transition: filter 0.2s, transform 0.2s; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre os ícones sociais */
+.social-links a:hover img {
+    filter: grayscale(0); /* Remove o efeito preto e branco */
+    transform: scale(1.2); /* Leve aumento no ícone */
+}
+
+/* Estilos da seção "Formação" */
+.formacao {
+    background-color: #fff;
+    padding: 25px; /* Espaçamento interno */
+    margin: 25px auto; /* Margem para posicionar no centro */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 10px 20px rgba(161, 111, 111, 0.1); /* Sombra */
+    max-width: 70%; /* Limita a largura máxima */
+}
+
+/* Título da seção "Formação" */
+.formacao h2 {
+    color: #ff69b4; /* Mesma cor rosa do título "Sobre Mim" */
+    font-size: 28px; /* Tamanho maior para destaque */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    font-weight: bold; /* Título em negrito */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Cada item individual na seção "Formação" */
+.formacao-item {
+    margin-bottom: 20px; /* Espaço entre os itens de formação */
+    padding: 15px; /* Espaçamento interno do item */
+    background-color: #ffd1dc; /* Fundo rosa claro */
+    border-radius: 8px; /* Borda arredondada para o item */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Sombra leve para profundidade */
+}
+
+/* Título de cada formação */
+.formacao-item h3 {
+    color: #000; /* Cor preta para o título da formação */
+    font-size: 20px; /* Tamanho médio para destaque */
+    margin-bottom: 5px; /* Espaço abaixo do título */
+}
+
+/* Texto informativo de cada formação */
+.formacao-item p {
+    color: #555; /* Cor cinza para o texto */
+    font-size: 16px; /* Tamanho do texto */
+    margin: 0;
+}
+
+.cursos-certificados {
+    background-color: #fff; /* Define o fundo branco para a seção, combinando com o estilo das outras seções */
+    padding: 25px; /* Espaçamento interno para dar "respiro" ao conteúdo */
+    margin: 25px auto; /* Espaçamento externo com margem acima e abaixo, centralizando a seção horizontalmente */
+    border-radius: 10px; /* Bordas arredondadas para dar um visual mais suave */
+    box-shadow: 0 10px 20px rgba(161, 111, 111, 0.1); /* Sombra suave para destacar a seção em relação ao fundo */
+    max-width: 70%; /* Limita a largura máxima da seção a 70% da tela para melhor leitura */
+}
+
+.cursos-certificados h2 {
+    color: #ff69b4; /* Define a cor rosa para o título, destacando-o */
+    font-size: 28px; /* Aumenta o tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaço abaixo do título para separá-lo dos itens */
+    font-weight: bold; /* Define o título em negrito para destacá-lo */
+    text-align: center; /* Centraliza o título horizontalmente */
+}
+
+/* Container para organizar as imagens de certificados */
+.certificados-container {
+    display: flex; /* Utiliza flexbox para organizar os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens "quebrem" a linha e ocupem outra, se necessário */
+    gap: 20px; /* Espaçamento entre cada item de certificado */
+    justify-content: center; /* Centraliza todos os itens de certificado no container */
+}
+
+/* Cada item individual de certificado */
+.certificado-item {
+    background-color: #ffd1dc; /* Fundo rosa claro para cada item de certificado */
+    padding: 10px; /* Espaçamento interno ao redor da imagem e do texto */
+    border-radius: 8px; /* Bordas arredondadas para cada item de certificado */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); /* Sombra leve para dar profundidade aos itens */
+    text-align: center; /* Centraliza o conteúdo do item (imagem e texto) */
+    width: 185px; /* Define a largura fixa para manter todos os itens do mesmo tamanho */
+    transition: transform 0.4s; /* Transição suave para o efeito de zoom no hover */
+}
+
+.certificado-item:hover {
+    transform: scale(1.06); /* Aumenta levemente o item (zoom) quando o usuário passa o mouse */
+}
+
+.certificado-item img {
+    width: 100%; /* A imagem ocupa toda a largura do item */
+    border-radius: 5px; /* Bordas levemente arredondadas na imagem para combinar com o design */
+    margin-bottom: 9px; /* Espaço entre a imagem e o nome do curso */
+}
+
+.certificado-item p {
+    color: #000; /* Cor preta para o texto do nome do curso */
+    font-size: 15px; /* Tamanho da fonte do texto do nome do curso */
+}
+
+.objetivos-principais {
+    background-color: #fff; /* Fundo branco para consistência */
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(161, 111, 111, 0.1);
+    max-width: 70%;
+    text-align: center;
+}
+
+.objetivos-principais h2 {
+    color: #ff69b4; /* Cor do título */
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.objetivo-item {
+    background-color: #ffd1dc; /* Fundo rosa claro para destacar */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.objetivo-item:hover {
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+.objetivo-item p {
+    color: #000;
+    font-size: 16px;
+    margin: 0;
+}
